@@ -135,7 +135,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "D:\\Users\\Guilherme\\Downloads\\ROLE-UNIVERSITARIO\\ApiBanco\\generated\\prisma",
+      "value": "C:\\_ws\\Faculdade\\ROLE-UNIVERSITARIO\\ApiBanco\\generated\\prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -149,7 +149,7 @@ const config = {
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "D:\\Users\\Guilherme\\Downloads\\ROLE-UNIVERSITARIO\\ApiBanco\\prisma\\schema.prisma",
+    "sourceFilePath": "C:\\_ws\\Faculdade\\ROLE-UNIVERSITARIO\\ApiBanco\\prisma\\schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
@@ -163,11 +163,12 @@ const config = {
     "db"
   ],
   "activeProvider": "mysql",
+  "postinstall": false,
   "inlineDatasources": {
     "db": {
       "url": {
         "fromEnvVar": "DATABASE_URL",
-        "value": "mysql://root:guizinho004@localhost:3306/apieventos"
+        "value": null
       }
     }
   },
