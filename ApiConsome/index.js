@@ -10,7 +10,7 @@ const redisClient = redis.createClient();
 redisClient.connect().catch(console.error);
 
 // Rota: GET /eventos
-app.get('/eventos', async (req, res) => {
+app.get('/Consomeeventos', async (req, res) => {
   const cacheKey = 'eventos_todos';
 
   try {
@@ -22,7 +22,6 @@ app.get('/eventos', async (req, res) => {
 
     // Busca da API origem
     const response = await axios.get('http://localhost:3000/eventos');
-    console.log(response.data); // Verifique a estrutura dos dados da resposta
     let eventos = response.data.eventos;
 
     // Verifique se a resposta contém um array de eventos

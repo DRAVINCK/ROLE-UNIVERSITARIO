@@ -91,7 +91,7 @@ app.get('/eventos', async (req, res) => {
 });
 
 // Rota GET para buscar um evento específico por NOME
-app.get('/eventos/:nome', verifyApiKey, async (req, res) => {
+app.get('/eventos/{nome}', verifyApiKey, async (req, res) => {
     
     const { nome } = req.params;
 
@@ -125,7 +125,7 @@ app.get('/eventos/:nome', verifyApiKey, async (req, res) => {
 });
 
 // Rota DELETE para excluir um evento com confirmação de deletar
-app.delete('/eventos/:nome', verifyApiKey, async (req, res) => {
+app.delete('/eventos/{nome}', verifyApiKey, async (req, res) => {
     const { nome } = req.params;
 
     try {

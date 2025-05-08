@@ -1,0 +1,39 @@
+🚀 Instruções API_ADM (Plataforma de Eventos Universitários)
+
+# Requisitos:
+- Python 3.10+
+- VS Code
+- PowerShell
+- Extensão Python instalada no VS Code
+
+# Passos para configurar:
+
+1. Abrir PowerShell.
+    python -m venv venv
+4. Ativar ambiente virtual:
+    .\venv\Scripts\Activate
+5. Instalar bibliotecas:
+    pip install fastapi uvicorn requests
+    pip install fastapi[all] requests redis
+
+8. Código principal no main.py:
+
+    (<<< CÓDIGO COPIADO DO FASTAPI >>>)
+
+9. Para rodar o servidor:
+    uvicorn main:app --reload --port 8001
+    ou
+    python main.py
+
+# Funcionalidades:
+
+- POST /criar-evento
+- PUT /atualizar-evento/{id_evento}
+- DELETE /deletar-evento/{id_evento}
+
+# Observações:
+- A API_BANCO deve estar rodando em localhost:8000
+- As requisições usam header "x-api-key: adm-secret-key"
+- Testar usando http://127.0.0.1:8001/docs
+
+🚀 Projeto preparado para desenvolvimento!
